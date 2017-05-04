@@ -10,12 +10,23 @@ import UIKit
 
 class GreenButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+        self.commonInit()
+        
     }
-    */
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.commonInit()
+    }
+    
+    func commonInit(){
+        self.backgroundColor = Color.green()
+        self.layer.cornerRadius = 5.0
+        self.setTitleColor(UIColor.white, for: .normal)
+        self.titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
+    }
+
 
 }

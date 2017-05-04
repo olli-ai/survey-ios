@@ -10,6 +10,17 @@ import UIKit
 
 class DashboardCell: UITableViewCell {
 
+    
+    @IBOutlet weak var lblText: UILabel!
+    
+    @IBOutlet weak var lblfToday: UILabel!
+    
+    @IBOutlet weak var lblThisweek: UILabel!
+    
+    @IBOutlet weak var lblLastweek: UILabel!
+    
+    @IBOutlet weak var lblTotal: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +31,10 @@ class DashboardCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    class func identifier() -> String {
+        return "DashboardCell"
+    }
+
 
 }

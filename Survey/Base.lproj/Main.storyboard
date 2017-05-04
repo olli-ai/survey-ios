@@ -1,14 +1,84 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zHa-hZ-Xgp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
+        <scene sceneID="9hQ-Qz-gjC">
+            <objects>
+                <viewController id="zHa-hZ-Xgp" customClass="LoginViewController" customModule="Survey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9TG-uh-OKb"/>
+                        <viewControllerLayoutGuide type="bottom" id="tAT-12-vR8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7kl-SG-b4o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập số điện thoại" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-PW-jhm">
+                                <rect key="frame" x="112" y="197.5" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DjA-n5-S2c">
+                                <rect key="frame" x="97.5" y="238.5" width="180" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6m0-mB-Cpy"/>
+                                    <constraint firstAttribute="width" constant="180" id="pt9-gZ-o2f"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBx-I9-aZ5" customClass="RedButton" customModule="Survey" customModuleProvider="target">
+                                <rect key="frame" x="97.5" y="358.5" width="180" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="IS3-E4-kps"/>
+                                    <constraint firstAttribute="width" constant="180" id="WOT-y9-gHk"/>
+                                </constraints>
+                                <state key="normal" title="Đăng nhập"/>
+                                <connections>
+                                    <action selector="btnLoginAction:" destination="zHa-hZ-Xgp" eventType="touchUpInside" id="A0B-O9-Xce"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="H7w-UI-gEJ">
+                                <rect key="frame" x="252.5" y="383" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DjA-n5-S2c" firstAttribute="centerY" secondItem="7kl-SG-b4o" secondAttribute="centerY" constant="-70" id="AWf-9v-IXg"/>
+                            <constraint firstItem="H7w-UI-gEJ" firstAttribute="trailing" secondItem="ZBx-I9-aZ5" secondAttribute="trailing" constant="-5" id="Apl-4L-n51"/>
+                            <constraint firstItem="DjA-n5-S2c" firstAttribute="centerX" secondItem="7kl-SG-b4o" secondAttribute="centerX" id="GOb-O0-NDq"/>
+                            <constraint firstItem="bWb-PW-jhm" firstAttribute="centerX" secondItem="DjA-n5-S2c" secondAttribute="centerX" id="HBW-KY-5FR"/>
+                            <constraint firstItem="ZBx-I9-aZ5" firstAttribute="top" secondItem="DjA-n5-S2c" secondAttribute="bottom" constant="70" id="J1z-Db-eek"/>
+                            <constraint firstItem="ZBx-I9-aZ5" firstAttribute="centerX" secondItem="DjA-n5-S2c" secondAttribute="centerX" id="dDB-Wx-EsL"/>
+                            <constraint firstItem="H7w-UI-gEJ" firstAttribute="centerY" secondItem="ZBx-I9-aZ5" secondAttribute="centerY" id="f5i-Y7-Zro"/>
+                            <constraint firstItem="DjA-n5-S2c" firstAttribute="top" secondItem="bWb-PW-jhm" secondAttribute="bottom" constant="20" id="mEk-5N-5H5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="ZBx-I9-aZ5" id="PhW-NU-diU"/>
+                        <outlet property="indicator" destination="H7w-UI-gEJ" id="H8F-GW-NxM"/>
+                        <outlet property="txtField" destination="DjA-n5-S2c" id="Hm3-dw-8Tb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3U-sD-SYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="119"/>
+        </scene>
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainViewController" customModule="Survey" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,6 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4" y="126"/>
         </scene>
     </scenes>
 </document>

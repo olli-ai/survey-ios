@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+class Question {
+    var id: String
+    var content: String
+    
+    init(json: JSON) {
+        id = json["id"].stringValue
+        content = json["content"].stringValue
+    }
+}

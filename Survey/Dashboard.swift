@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class Dashoboard {
+class Dashboard {
     var lastweekAns: String
     var lastweekSur: String
     var thisweekAns: String

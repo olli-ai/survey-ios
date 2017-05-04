@@ -8,16 +8,20 @@
 
 import Foundation
 
-class AnwserContent {
-    var questionId: Int
+class Anwser {
+    var questionId: String
     var anwserText: String
-    var anwserAudioPath: String
+    var anwserAudioPath: URL?
+    var accuracy: Int
     var isAnwsered: Bool
     
-    init(questid: Int, text: String, path: String, isAnwser: Bool) {
+    init(questid: String, text: String, acy: Int, isAnwser: Bool) {
         questionId = questid
         anwserText = text
-        anwserAudioPath = path
+        accuracy = acy
         isAnwsered = isAnwser
     }
 }
+
+
+
