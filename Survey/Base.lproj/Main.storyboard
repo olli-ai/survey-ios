@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zHa-hZ-Xgp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zHa-hZ-Xgp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập số điện thoại" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-PW-jhm">
-                                <rect key="frame" x="112" y="197.5" width="151" height="21"/>
+                                <rect key="frame" x="112" y="187.5" width="151" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DjA-n5-S2c">
-                                <rect key="frame" x="97.5" y="238.5" width="180" height="50"/>
+                                <rect key="frame" x="97.5" y="228.5" width="180" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6m0-mB-Cpy"/>
@@ -39,9 +39,9 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBx-I9-aZ5" customClass="RedButton" customModule="Survey" customModuleProvider="target">
-                                <rect key="frame" x="97.5" y="358.5" width="180" height="70"/>
+                                <rect key="frame" x="97.5" y="338.5" width="180" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="IS3-E4-kps"/>
+                                    <constraint firstAttribute="height" constant="60" id="IS3-E4-kps"/>
                                     <constraint firstAttribute="width" constant="180" id="WOT-y9-gHk"/>
                                 </constraints>
                                 <state key="normal" title="Đăng nhập"/>
@@ -50,16 +50,16 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="H7w-UI-gEJ">
-                                <rect key="frame" x="252.5" y="383" width="20" height="20"/>
+                                <rect key="frame" x="252.5" y="358" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DjA-n5-S2c" firstAttribute="centerY" secondItem="7kl-SG-b4o" secondAttribute="centerY" constant="-70" id="AWf-9v-IXg"/>
+                            <constraint firstItem="DjA-n5-S2c" firstAttribute="centerY" secondItem="7kl-SG-b4o" secondAttribute="centerY" constant="-80" id="AWf-9v-IXg"/>
                             <constraint firstItem="H7w-UI-gEJ" firstAttribute="trailing" secondItem="ZBx-I9-aZ5" secondAttribute="trailing" constant="-5" id="Apl-4L-n51"/>
                             <constraint firstItem="DjA-n5-S2c" firstAttribute="centerX" secondItem="7kl-SG-b4o" secondAttribute="centerX" id="GOb-O0-NDq"/>
                             <constraint firstItem="bWb-PW-jhm" firstAttribute="centerX" secondItem="DjA-n5-S2c" secondAttribute="centerX" id="HBW-KY-5FR"/>
-                            <constraint firstItem="ZBx-I9-aZ5" firstAttribute="top" secondItem="DjA-n5-S2c" secondAttribute="bottom" constant="70" id="J1z-Db-eek"/>
+                            <constraint firstItem="ZBx-I9-aZ5" firstAttribute="top" secondItem="DjA-n5-S2c" secondAttribute="bottom" constant="60" id="J1z-Db-eek"/>
                             <constraint firstItem="ZBx-I9-aZ5" firstAttribute="centerX" secondItem="DjA-n5-S2c" secondAttribute="centerX" id="dDB-Wx-EsL"/>
                             <constraint firstItem="H7w-UI-gEJ" firstAttribute="centerY" secondItem="ZBx-I9-aZ5" secondAttribute="centerY" id="f5i-Y7-Zro"/>
                             <constraint firstItem="DjA-n5-S2c" firstAttribute="top" secondItem="bWb-PW-jhm" secondAttribute="bottom" constant="20" id="mEk-5N-5H5"/>

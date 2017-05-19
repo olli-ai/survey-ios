@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,10 +55,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-Tk-n77">
-                    <rect key="frame" x="20" y="106.5" width="335" height="251"/>
+                    <rect key="frame" x="20" y="106.5" width="335" height="261"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T92-Tg-Qc6">
-                            <rect key="frame" x="20" y="5" width="295" height="241"/>
+                            <rect key="frame" x="20" y="5" width="295" height="251"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -135,7 +135,7 @@
                 <constraint firstAttribute="trailing" secondItem="G8k-02-fFH" secondAttribute="trailing" constant="20" id="GCL-kW-RD7"/>
                 <constraint firstItem="rrk-ek-uhe" firstAttribute="centerX" secondItem="qkR-Wm-KsV" secondAttribute="centerX" id="Uzh-j8-QvT"/>
                 <constraint firstItem="8tN-4V-2wg" firstAttribute="width" secondItem="rTu-Yv-Xal" secondAttribute="width" id="W8h-Jd-cKJ"/>
-                <constraint firstItem="Njh-AG-SIc" firstAttribute="top" secondItem="ypo-Tk-n77" secondAttribute="bottom" constant="20" id="Yxp-xU-6n1"/>
+                <constraint firstItem="Njh-AG-SIc" firstAttribute="top" secondItem="ypo-Tk-n77" secondAttribute="bottom" constant="10" id="Yxp-xU-6n1"/>
                 <constraint firstItem="ypo-Tk-n77" firstAttribute="leading" secondItem="G8k-02-fFH" secondAttribute="leading" id="Z04-fC-lbe"/>
                 <constraint firstItem="qkR-Wm-KsV" firstAttribute="width" secondItem="8tN-4V-2wg" secondAttribute="width" multiplier="3:2" id="dlC-K8-udW"/>
                 <constraint firstItem="qkR-Wm-KsV" firstAttribute="height" secondItem="8tN-4V-2wg" secondAttribute="height" id="dxD-Je-ef1"/>

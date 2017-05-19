@@ -301,8 +301,8 @@ extension MainViewController: ProviderViewDelegate {
     func next() {
     
         providerView.btnNext.isEnabled = false
-        //providerView.indicator.startAnimating()
-        providerView.centerIndicator.startAnimating()
+        providerView.indicator.startAnimating()
+        //providerView.centerIndicator.startAnimating()
         
         var gender = "1"
         if providerView.isMale {
@@ -326,8 +326,8 @@ extension MainViewController: ProviderViewDelegate {
                 DispatchQueue.main.async(execute: {
 
                     self.providerView.btnNext.isEnabled = true
-                    //self.providerView.indicator.stopAnimating()
-                    self.providerView.centerIndicator.stopAnimating()
+                    self.providerView.indicator.stopAnimating()
+                    //self.providerView.centerIndicator.stopAnimating()
 
                     
                     self.providerView.isHidden = true
@@ -459,14 +459,14 @@ extension MainViewController: SurveyViewDelegate {
         
         if surveyView.txtViewAnwser.text.characters.count > 0 {
             
-            let confidence = getRandomConfidence()
-            let text = "Độ chính xác: " + String(confidence) + "%"
-            self.surveyView.lblAccuracy.text = text
+            //let confidence = getRandomConfidence()
+           // let text = "Độ chính xác: " + String(confidence) + "%"
+            self.surveyView.lblAccuracy.text = ""
             
             let currentAnwser = self.arrayAnwser[currenIndexQuestion]
             currentAnwser.anwserText = surveyView.txtViewAnwser.text
             currentAnwser.isAnwsered = true
-            currentAnwser.accuracy = confidence
+            //currentAnwser.accuracy = confidence
 
         } else {
             self.surveyView.lblAccuracy.text = ""
@@ -514,7 +514,7 @@ extension MainViewController: SummaryViewDelegate {
         
         for anwser in self.arrayAnwser {
             if anwser.isAnwsered {
-                self.apiInstance.uploadAnswer(answerText: anwser.anwserText, fpid: self.fpid, fqid: anwser.questionId, faccuracy: String(anwser.accuracy), audio: anwser.anwserAudioPath!, success: {
+                self.apiInstance.uploadAnswer(answerText: anwser.anwserText, fpid: self.fpid, fqid: anwser.questionId, faccuracy: "0", audio: anwser.anwserAudioPath!, success: {
                     DispatchQueue.main.async(execute: {
                         let number: Double = 1 / Double(totalAnwsered) * 100
                         let numberint = Int(number)
