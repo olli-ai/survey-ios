@@ -134,6 +134,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func btnLoginAction(_ sender: Any) {
         
+        self.view.endEditing(true)
+        
         btnLogin.isEnabled = false
         indicator.startAnimating()
         

@@ -299,7 +299,9 @@ extension MainViewController: ProviderViewDelegate {
     }
     
     func next() {
-    
+        
+        self.view.endEditing(true)
+        
         providerView.btnNext.isEnabled = false
         providerView.indicator.startAnimating()
         //providerView.centerIndicator.startAnimating()
